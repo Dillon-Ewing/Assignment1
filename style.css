@@ -1,0 +1,58 @@
+ body {
+    margin: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffe7;
+} 
+
+header {
+    padding:20px;
+}
+
+div.column {
+    float: left;
+    background-color: azure;
+}
+
+div.review {
+    width: 20%;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+div.center {
+    width: 50%;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+} 
+
+div.recent {
+    width: 20%;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+div.row:after {
+    content: "";
+    display:table;
+    clear: both;
+}
+
+
+img.albumArt {
+    width: 300px;
+    height: 300px;
+}
+
+
+img.home {
+    width: 75%;
+    height: 15%;
+}
+

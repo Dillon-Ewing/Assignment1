@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Post</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Dillon's Music Blog!</h1>
+            <hr>
+        </header>
+        <div class="row">
+            <div class="column review">
+                <h3>What people are saying about us:</h3>
+                <hr>
+                <blockquote>
+                    "Dillon's Music Blog is a great source to find new music!"
+                </blockquote>
+            </div>
+            <div class="column center">
+                <section>
+                    <h3>Blog Submission</h3>
+                    <hr>
+                    <form>
+                        <label for="albumName">Album/Song Name</label><br>
+                        <input type="text" id="albumName" name="albumName"><br>
+                        <label for="artistName">Artist Name</label><br>
+                        <input type="text" id="artistName" name="artistName"><br>
+                        <label for="review">Your Review</label><br>
+                        <input type="text" id="review" name="review"><br><br>
+        
+                        <p>What is it available to stream on?</p>
+                        <input type="checkbox" id="spotify" name="spotify" value="Spotify">
+                        <label for="spotify">Spotify</label>
+                        <input type="checkbox" id="appleMusic" name="appleMusic" value="AppleMusic">
+                        <label for="appleMusic">Apple Music</label>
+                        <input type="checkbox" id="other" name="other" value="other">
+                        <label for="other">Other</label><br> <br>
+        
+                        <p>Is it an album or song?</p>
+                        <input type="radio" id="album" name="albumOrSong" value="album">
+                        <label for="album">Album</label><br>
+                        <input type="radio" id="song" name="albumOrSong" value="song">
+                        <label for="song">Song</label><br><br>
+        
+                        <input type="submit">
+                    </form>                    
+                </section>
+            </div>
+            <div class="column recent">
+                <h3>Recent Posts:</h3>
+                <hr>
+                <ul>
+                    <li><a href="post1.html">Man on the Moon: The End of Day</a></li>
+                    <li><a href="post2.html">Change of Scenery II</a></li>
+                    <li><a href="post3.html">Some Nights</a></li>
+                </ul>
+            </div>
+        </div>        
+        <footer>
+            <p><a href="index.html">Go Home</a></p>
+            <p><a href="posts.html">Past Posts</a></p>
+            <p><a href="create.html">Make a Post</a></p>
+        </footer>
+    </body>
+</html>
