@@ -1,5 +1,8 @@
- body {
-    margin: 20px;
+*
+{box-sizing: border-box;}
+
+body {
+    
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     background-color: #ffffe7;
@@ -9,32 +12,47 @@ header {
     padding:20px;
 }
 
-div.column {
-    float: left;
-    background-color: azure;
+input[type=text] {
+    border: 2px solid black;
+    
 }
 
-div.review {
-    width: 20%;
+input[type=text]:focus {
     border: 3px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
+  }
+
+input[type=email] {
+    border: 2px solid black;
+    
 }
 
-div.center {
-    width: 50%;
+input[type=email]:focus {
     border: 3px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
-} 
+  }
 
-div.recent {
-    width: 20%;
+input[type=number] {
+    border: 2px solid black;
+    
+}
+
+input[type=number]:focus {
     border: 3px solid black;
+  }
+
+
+input[type=tel] {
+    border: 2px solid black;
+    
+}
+
+input[type=tel]:focus {
+    border: 3px solid black;
+  }
+
+.inputSubmit {
+    background-color: black;
+    color: white;
     border-radius: 5px;
-    padding: 10px;
     margin: 5px;
 }
 
@@ -43,6 +61,7 @@ div.row:after {
     display:table;
     clear: both;
 }
+
 
 
 img.albumArt {
@@ -56,3 +75,120 @@ img.home {
     height: 15%;
 }
 
+#homeimg:hover {
+    transform: rotateY(360deg);
+    transition: all 2s;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    transition: all 1s;
+    color: rgb(0, 247, 255);
+    font-size: 20px;
+}
+
+.welcome {
+    color: red;
+    animation-name: rgb;
+    animation-duration: 7s;
+}
+
+@keyframes rgb {
+    0% {color: red;}
+    33% {color: green;}
+    66% {color: blue;}
+}
+
+[class*="col-"] {
+    width:100%;
+    float: left;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 0px;
+    background-color: azure;    
+}
+
+
+@media only screen and (max-width:576px) {
+    div.invis {display: none;}
+}
+
+@media only screen and (min-width:576px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    div.invis {display: none;}
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+  }
+
+  @media only screen and (min-width: 922px) {
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+    div.invis {display:contents;}
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .col-xl-1 {width: 8.33%;}
+    .col-xl-2 {width: 16.66%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.33%;}
+    .col-xl-5 {width: 41.66%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.33%;}
+    .col-xl-8 {width: 66.66%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.33%;}
+    .col-xl-11 {width: 91.66%;}
+    .col-xl-12 {width: 100%;}
+  }
+
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }

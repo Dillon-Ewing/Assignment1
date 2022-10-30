@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Posts</title>
+        <title>Become a Member</title>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
-            <h1>Welcome to Dillon's Music Blog!</h1>            
+            <h1>Welcome to Dillon's Music Blog!</h1>
             <hr>
         </header>
         <div class="row">
@@ -22,31 +22,17 @@
             </div>
             <div class="col-s-12 col-m-9 col-l-9 col-xl-4 center">
                 <section>
-                    <h2>Past Posts</h2>
-                    <p>Click on Album Name to view Review</p>
-                    <table>
-                        <tr>
-                            <th>Album</th>
-                            <th>Artist</th>
-                            <th>Date Posted</th>
-                        </tr>
-                        <tr>
-                            <td><a href="post1.html">Man on the Moon: The End of Day</a></td>
-                            <td>Kid Cudi</td>
-                            <td>January 3rd, 2022</td>
-                        </tr>
-                        <tr>
-                            <td><a href="post2.html">Change of Scenery II</a></td>
-                            <td>Quinn XCII</td>
-                            <td>Febuary 22nd, 2022</td>
-                        </tr>
-                        <tr>
-                            <td><a href="post3.html">Some Nights</a></td>
-                            <td>fun.</td>
-                            <td>March 1st, 2022</td>
-                        </tr>
-                    </table>            
+                    <h3>Become a Member!</h3>
                     <hr>
+                    <form>
+                        <label for="username">Username</label><br>
+                        <input type="text" id="username" name="username"><br>
+
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email"><br><br>
+        
+                        <input type="submit" class="inputSubmit">
+                    </form>                    
                 </section>
             </div>
             <div class="col-s-12 col-m-3 col-l-12 col-xl-4 recent">
@@ -58,11 +44,8 @@
                     <li><a href="post3.html">Some Nights</a></li>
                 </ul>
             </div>
-        </div>
-
-        
+        </div>        
         <footer>
-            <aside>All posts are subject to our terms and conditions</aside>
             <p><a href="index.html">Go Home</a></p>
             <p><a href="posts.html">Past Posts</a></p>
             <p><a href="create.html">Make a Post</a></p>

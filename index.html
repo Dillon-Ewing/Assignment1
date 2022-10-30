@@ -3,44 +3,52 @@
     <head>
         <title>Index</title>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>        
         <header>
-            <h1>Welcome to Dillon's Music Blog!</h1>
+            <h1 class="welcome">Welcome to Dillon's Music Blog!</h1>
             
             <hr>
         </header>
         <div class="row">
-            <div class="column review">
-                <h3>What people are saying about us:</h3>
-                <hr>
-                <blockquote>
-                    "Dillon's Music Blog is a great source to find new music!"
-                </blockquote>
-            </div>
-            <div class="column center">
-                <main>            
-                    <article>
-                        <h3>Where you can post reviews of songs and albums.</h3>
-                        <img class="home" src="images/musicImage.jpg"  alt="Spotify and Apple Music Logos">
-                        
-                        <h2><a href ="posts.html">Look at past posts</a></h2>
-                        <form action="create.html">
-                            <button onclick="create.html" ><h2>Create a post</h2></button>
-                        </form>
+            <div class="invis">
+                <div class="col-s-4 col-m-3 col-l-3 col-xl-4 review">
+                    
+                        <h3>What people are saying about us:</h3>
                         <hr>
-                    </article>
-                </main>
-            </div>
-            <div class="column recent">
-                <h3>Recent Posts:</h3>
-                <hr>
-                <ul>
-                    <li><a href="post1.html">Man on the Moon: The End of Day</a></li>
-                    <li><a href="post2.html">Change of Scenery II</a></li>
-                    <li><a href="post3.html">Some Nights</a></li>
-                </ul>
-            </div>
+                        <blockquote>
+                            "Dillon's Music Blog is a great source to find new music!"
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-s-12 col-m-9 col-l-9 col-xl-4 center">
+                    <main>            
+                        <article>
+                            <h3>Where you can post reviews of songs and albums.</h3>
+                            <div id="homeimg"><img class="home" src="images/musicImage.jpg"  alt="Spotify and Apple Music Logos"></div>
+                            
+                            
+                            <form class="button posts" action="posts.html">
+                                <button onclick="posts.html" ><h2>Look at Past Posts</h2></button>
+                            </form>
+                            <form class="button create" action="create.html">
+                                <button onclick="create.html" ><h2>Create a post</h2></button>
+                            </form>
+                            
+                        </article>
+                    </main>
+                </div>
+                <div class="col-s-12 col-m-3 col-l-12 col-xl-4 recent">
+                    <h3>Recent Posts:</h3>
+                    <hr>
+                    <ul>
+                        <li><a href="post1.html">Man on the Moon: The End of Day</a></li>
+                        <li><a href="post2.html">Change of Scenery II</a></li>
+                        <li><a href="post3.html">Some Nights</a></li>
+                    </ul>
+                </div>
+            
         </div>
         <footer>
             <aside>All posts are subject to our terms and conditions</aside>
@@ -48,6 +56,12 @@
                 "https://www.techradar.com/news/audio/apple-music-vs-spotify-vs-play-music-vs-tidal-vs-deezer-1296240">
                 Techradar.com</a></p>
                 <p><a href="post1.html">Sample post</a></p>
+                <p><a href="index.html">Go Home</a></p>
+                <p><a href="posts.html">Past Posts</a></p>
+                <p><a href="create.html">Make a Post</a></p>
+                <p><a href="membership.html">Become a Member</a></p>
+                <p><a href="donation.html">Donate to Support</a></p>
+                <p><a href="newsletter.html">Sign upp for our Newsletter</a></p>
         </footer>
         
     </body>
